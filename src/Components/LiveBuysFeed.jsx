@@ -9,6 +9,11 @@ const POLL_MS = 5_000;
 const MAX_BUYS = 14;
 const WHALE_USD = 500;
 
+function tradesApiUrl(pairAddress) {
+  const pool = encodeURIComponent(pairAddress);
+  return `/api/gecko/networks/solana/pools/${pool}/trades`;
+}
+
 function pickBestPair(pairs) {
   if (!pairs?.length) return null;
   return [...pairs].sort(
@@ -83,12 +88,11 @@ function LiveBuysFeed() {
     const addr = pairData?.pairAddress ?? pair?.pairAddress;
     if (!addr) return;
 
-    const res = await fetch(
-      `/api/gecko/networks/solana/pools/${addr}/trades`
-    );
+    const res = await fetch(tradesApiUrl(addr));
     if (!res.ok) throw new Error("Trade feed unavailable");
 
     const json = await res.json();
+    if (json.error && !json.data) throw new Error(json.error);
     const incoming = (json.data || [])
       .filter((t) => t.attributes?.kind === "buy")
       .map(mapBuyTrade)
