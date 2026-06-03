@@ -4,12 +4,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 12px 20px;
-  background: #fff;
-  color: #000 !important;
+  background: var(--son-bg);
+  color: var(--son-text) !important;
   position: sticky;
   top: 0;
   z-index: 1000;
-  border-bottom: 3px solid #000000;
+  border-bottom: 3px solid var(--son-border);
   min-height: 64px;
   box-sizing: border-box;
 }
@@ -28,7 +28,7 @@
   margin: 0;
   font-size: 20px;
   font-weight: bold;
-  color: #000000;
+  color: var(--son-text)000;
   text-decoration: none;
   line-height: 0;
 }
@@ -46,8 +46,8 @@
 .menu-overlay {
   position: fixed;
   inset: 0;
-  background: #fff;
-  color: #000 !important;
+  background: var(--son-bg);
+  color: var(--son-text) !important;
   z-index: 10000;
   overflow: hidden;
 }
@@ -101,7 +101,7 @@
   left: 50%;
   width: 4px;
   transform: translateX(-50%);
-  background: #000;
+  background: var(--son-bg-inverse);
   border-radius: 999px;
   box-shadow:
     2px 0 0 rgba(0, 0, 0, 0.3),
@@ -133,7 +133,7 @@
 .menu-list li a {
   display: inline-block;
   text-decoration: none;
-  color: #000 !important;
+  color: var(--son-text) !important;
   font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
   font-size: clamp(1.75rem, 6vw, 2.75rem);
   font-weight: 900;
@@ -202,7 +202,7 @@
   margin-top: auto;
   padding-top: 16px;
   font-size: 11px;
-  color: #666;
+  color: var(--son-text-muted);
   line-height: 1.5;
   max-width: 320px;
 }

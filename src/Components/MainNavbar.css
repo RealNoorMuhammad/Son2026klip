@@ -4,14 +4,14 @@
   top: 0;
   z-index: 1200;
   width: 100%;
-  background: #fff;
-  border-bottom: 3px solid #000;
+  background: var(--son-bg);
+  border-bottom: 3px solid var(--son-border);
   box-sizing: border-box;
   transition: box-shadow 0.25s ease;
 }
 
 .main-nav--open {
-  box-shadow: 0 4px 0 #000;
+  box-shadow: 0 4px 0 var(--son-shadow);
 }
 
 .main-nav__bar {
@@ -30,7 +30,7 @@
   font-size: clamp(1.1rem, 2.8vw, 1.65rem);
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: #000;
+  color: var(--son-text);
   text-decoration: none;
   line-height: 1.15;
   transition: opacity 0.2s ease;
@@ -60,7 +60,7 @@
   font-family: inherit;
   font-size: clamp(0.8rem, 1.4vw, 0.95rem);
   font-weight: 400;
-  color: #000;
+  color: var(--son-text);
   text-decoration: none !important;
   white-space: nowrap;
   padding: 6px 2px;
@@ -88,17 +88,17 @@
   align-items: center;
   justify-content: center;
   padding: 12px 22px;
-  background: #000;
-  color: #fff !important;
+  background: var(--son-bg-inverse);
+  color: var(--son-text-inverse) !important;
   font-family: inherit;
   font-size: 0.8rem;
   font-weight: 800;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   text-decoration: none !important;
-  border: 3px solid #000;
+  border: 3px solid var(--son-border);
   border-radius: 999px;
-  box-shadow: 4px 4px 0 #000;
+  box-shadow: 4px 4px 0 var(--son-shadow);
   white-space: nowrap;
   transition:
     transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1),
@@ -107,12 +107,12 @@
 
 .main-nav__buy:hover {
   transform: translate(-3px, -3px);
-  box-shadow: 7px 7px 0 #000;
+  box-shadow: 7px 7px 0 var(--son-shadow);
 }
 
 .main-nav__buy:active {
   transform: translate(2px, 2px);
-  box-shadow: 2px 2px 0 #000;
+  box-shadow: 2px 2px 0 var(--son-shadow);
 }
 
 /* Mobile menu trigger */
@@ -123,12 +123,12 @@
   flex-shrink: 0;
   margin-left: auto;
   padding: 10px 14px 10px 16px;
-  background: #fff;
-  border: 3px solid #000;
+  background: var(--son-bg);
+  border: 3px solid var(--son-border);
   border-radius: 12px;
-  box-shadow: 4px 4px 0 #000;
+  box-shadow: 4px 4px 0 var(--son-shadow);
   cursor: pointer;
-  color: #000;
+  color: var(--son-text);
   transition:
     transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1),
     box-shadow 0.2s ease,
@@ -137,13 +137,13 @@
 
 .main-nav__menu-btn:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 6px 6px 0 #000;
-  background: #fafafa;
+  box-shadow: 6px 6px 0 var(--son-shadow);
+  background: var(--son-bg-subtle);
 }
 
 .main-nav__menu-btn:active {
   transform: translate(2px, 2px);
-  box-shadow: 2px 2px 0 #000;
+  box-shadow: 2px 2px 0 var(--son-shadow);
 }
 
 .main-nav__menu-btn-label {
@@ -167,24 +167,24 @@
   display: block;
   height: 3px;
   width: 100%;
-  background: #000;
+  background: var(--son-bg-inverse);
   border-radius: 2px;
   transition: transform 0.28s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.2s ease, width 0.2s ease;
   transform-origin: center;
 }
 
 .main-nav__menu-btn--open {
-  background: #000;
-  color: #fff;
+  background: var(--son-bg-inverse);
+  color: var(--son-text-inverse);
   box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.35);
 }
 
 .main-nav__menu-btn--open .main-nav__menu-btn-label {
-  color: #fff;
+  color: var(--son-text-inverse);
 }
 
 .main-nav__menu-btn--open .main-nav__menu-btn-bars span {
-  background: #fff;
+  background: var(--son-bg);
 }
 
 .main-nav__menu-btn--open .main-nav__menu-btn-bars span:nth-child(1) {
@@ -257,7 +257,7 @@ body.main-nav-open {
     inset: 0;
     z-index: 1199;
     padding: 0;
-    background: #fff;
+    background: var(--son-bg);
     box-sizing: border-box;
     overflow: hidden;
   }
@@ -279,8 +279,8 @@ body.main-nav-open {
     align-items: center;
     justify-content: space-between;
     padding: 16px 20px;
-    border-bottom: 3px solid #000;
-    background: #fff;
+    border-bottom: 3px solid var(--son-border);
+    background: var(--son-bg);
   }
 
   .main-nav__mobile-tag {
@@ -290,7 +290,7 @@ body.main-nav-open {
     font-weight: 700;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: #666;
+    color: var(--son-text-muted);
   }
 
   .main-nav__close-btn {
@@ -299,12 +299,12 @@ body.main-nav-open {
     gap: 10px;
     flex-shrink: 0;
     padding: 10px 14px 10px 16px;
-    background: #fff;
-    border: 3px solid #000;
+    background: var(--son-bg);
+    border: 3px solid var(--son-border);
     border-radius: 12px;
-    box-shadow: 4px 4px 0 #000;
+    box-shadow: 4px 4px 0 var(--son-shadow);
     cursor: pointer;
-    color: #000;
+    color: var(--son-text);
     transition:
       transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1),
       box-shadow 0.2s ease,
@@ -313,13 +313,13 @@ body.main-nav-open {
 
   .main-nav__close-btn:hover {
     transform: translate(-2px, -2px);
-    box-shadow: 6px 6px 0 #000;
-    background: #fafafa;
+    box-shadow: 6px 6px 0 var(--son-shadow);
+    background: var(--son-bg-subtle);
   }
 
   .main-nav__close-btn:active {
     transform: translate(2px, 2px);
-    box-shadow: 2px 2px 0 #000;
+    box-shadow: 2px 2px 0 var(--son-shadow);
   }
 
   .main-nav__close-btn-label {
@@ -346,7 +346,7 @@ body.main-nav-open {
     height: 3px;
     margin-left: -10px;
     margin-top: -1.5px;
-    background: #000;
+    background: var(--son-bg-inverse);
     border-radius: 2px;
   }
 
@@ -377,12 +377,12 @@ body.main-nav-open {
     gap: 14px;
     width: 100%;
     padding: 18px 18px;
-    background: #fff;
-    border: 3px solid #000;
+    background: var(--son-bg);
+    border: 3px solid var(--son-border);
     border-radius: 14px;
-    box-shadow: 5px 5px 0 #000;
+    box-shadow: 5px 5px 0 var(--son-shadow);
     text-decoration: none !important;
-    color: #000;
+    color: var(--son-text);
     box-sizing: border-box;
     transition:
       transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1),
@@ -391,12 +391,12 @@ body.main-nav-open {
 
   .main-nav__mobile-card:hover {
     transform: translate(-3px, -3px);
-    box-shadow: 8px 8px 0 #000;
+    box-shadow: 8px 8px 0 var(--son-shadow);
   }
 
   .main-nav__mobile-card:active {
     transform: translate(2px, 2px);
-    box-shadow: 3px 3px 0 #000;
+    box-shadow: 3px 3px 0 var(--son-shadow);
   }
 
   .main-nav__mobile-card-num {
@@ -432,8 +432,8 @@ body.main-nav-open {
     position: relative;
     z-index: 1;
     padding: 20px 20px calc(24px + env(safe-area-inset-bottom, 0px));
-    border-top: 3px solid #000;
-    background: #fff;
+    border-top: 3px solid var(--son-border);
+    background: var(--son-bg);
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -446,11 +446,11 @@ body.main-nav-open {
     font-size: 1rem;
     text-align: center;
     border-radius: 14px;
-    box-shadow: 5px 5px 0 #000;
+    box-shadow: 5px 5px 0 var(--son-shadow);
   }
 
   .main-nav__buy--mobile:hover {
-    box-shadow: 8px 8px 0 #000;
+    box-shadow: 8px 8px 0 var(--son-shadow);
   }
 
   .main-nav__mobile-social {
@@ -468,7 +468,7 @@ body.main-nav-open {
     font-size: 0.7rem;
     font-weight: 600;
     letter-spacing: 0.06em;
-    color: #888;
+    color: var(--son-text-muted);
     text-transform: uppercase;
   }
 }
@@ -484,7 +484,7 @@ body.main-nav-open {
     padding: 8px 12px 8px 14px;
     gap: 8px;
     border-radius: 10px;
-    box-shadow: 3px 3px 0 #000;
+    box-shadow: 3px 3px 0 var(--son-shadow);
   }
 
   .main-nav__menu-btn-label {
@@ -495,7 +495,7 @@ body.main-nav-open {
     padding: 8px 12px 8px 14px;
     gap: 8px;
     border-radius: 10px;
-    box-shadow: 3px 3px 0 #000;
+    box-shadow: 3px 3px 0 var(--son-shadow);
   }
 
   .main-nav__close-btn-label {

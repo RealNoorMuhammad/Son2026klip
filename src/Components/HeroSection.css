@@ -1,7 +1,7 @@
 .hero {
   width: 100%;
-  background: #fff;
-  border-bottom: 1px solid #e8e8e8;
+  background: var(--son-bg);
+  border-bottom: 1px solid var(--son-border-faint);
   box-sizing: border-box;
 }
 
@@ -29,7 +29,7 @@
   font-weight: 600;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: #9ca3af;
+  color: var(--son-text-faint);
 }
 
 .hero__title {
@@ -39,7 +39,7 @@
   line-height: 1.05;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  color: #000;
+  color: var(--son-text);
 }
 
 .hero__copy {
@@ -51,7 +51,7 @@
   margin: 0 0 6px;
   font-size: clamp(0.95rem, 1.8vw, 1.05rem);
   line-height: 1.55;
-  color: #111;
+  color: var(--son-text-soft);
 }
 
 .hero__copy p:last-child {
@@ -64,17 +64,17 @@
   width: 100%;
   max-width: 520px;
   margin-bottom: 28px;
-  border: 1px solid #d1d5db;
+  border: 1px solid var(--son-border-soft);
   border-radius: 14px;
-  background: #fff;
+  background: var(--son-bg);
   overflow: hidden;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .hero__ca:focus-within {
-  border-color: #000;
-  box-shadow: 0 0 0 1px #000;
+  border-color: var(--son-border);
+  box-shadow: 0 0 0 1px var(--son-border);
 }
 
 .hero__ca-body {
@@ -92,13 +92,13 @@
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #9ca3af;
+  color: var(--son-text-faint);
 }
 
 .hero__ca-value {
   font-size: clamp(0.72rem, 1.6vw, 0.85rem);
   line-height: 1.35;
-  color: #000;
+  color: var(--son-text);
   word-break: break-all;
 }
 
@@ -106,21 +106,21 @@
   flex-shrink: 0;
   width: 52px;
   border: none;
-  border-left: 1px solid #d1d5db;
-  background: #fafafa;
-  color: #000;
+  border-left: 1px solid var(--son-border-soft);
+  background: var(--son-bg-subtle);
+  color: var(--son-text);
   font-size: 1.1rem;
   cursor: pointer;
   transition: background 0.2s ease, color 0.2s ease;
 }
 
 .hero__ca-copy:hover {
-  background: #f0f0f0;
+  background: var(--son-bg-muted);
 }
 
 .hero__ca-copy--done {
-  background: #000;
-  color: #fff;
+  background: var(--son-bg-inverse);
+  color: var(--son-text-inverse);
 }
 
 .hero__socials {

@@ -1,7 +1,7 @@
 .pfp-maker-page {
   min-height: 100vh;
   background: #fff;
-  color: #000;
+  color: var(--son-border);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,7 +33,7 @@
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: -0.03em;
-  color: #000;
+  color: var(--son-border);
 }
 
 .pfp-maker-subtitle {
@@ -50,7 +50,7 @@
   margin: 0 0 16px;
   padding: 10px 16px;
   background: #ffe8e8;
-  border: 2px solid #c00;
+  border: 2px solid var(--son-error-text);
   color: #900;
   font-size: 0.95rem;
   box-sizing: border-box;
@@ -63,15 +63,15 @@
   align-items: center;
   gap: 8px;
   padding: 40px 24px;
-  border: 3px dashed #000;
+  border: 3px dashed var(--son-border);
   background: #fafafa;
-  box-shadow: 6px 6px 0 #000;
+  box-shadow: 6px 6px 0 var(--son-shadow);
   box-sizing: border-box;
   transition: background 0.2s ease;
 }
 
 .pfp-maker-dropzone--active {
-  background: #f0f8ff;
+  background: var(--son-bg-muted);
 }
 
 .pfp-maker-upload-icon {
@@ -87,7 +87,7 @@
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: -0.02em;
-  color: #000;
+  color: var(--son-border);
 }
 
 .pfp-maker-dropzone-text {
@@ -122,7 +122,7 @@
   line-height: 1.2;
   text-align: center;
   text-decoration: none !important;
-  color: #000 !important;
+  color: var(--son-border) !important;
   box-sizing: border-box;
   white-space: nowrap;
 }
@@ -170,8 +170,8 @@
 .pfp-maker-page .canvasWrap {
   position: relative;
   background: #fff;
-  border: 3px solid #000;
-  box-shadow: 6px 6px 0 #000;
+  border: 3px solid var(--son-border);
+  box-shadow: 6px 6px 0 var(--son-shadow);
   width: 100%;
   max-width: 100%;
   height: auto;
@@ -188,8 +188,8 @@
 .pfp-maker-page .side {
   width: 100%;
   background: #fff;
-  border: 3px solid #000;
-  box-shadow: 6px 6px 0 #000;
+  border: 3px solid var(--son-border);
+  box-shadow: 6px 6px 0 var(--son-shadow);
   padding: 14px;
   box-sizing: border-box;
   display: flex;
@@ -227,7 +227,7 @@
 
 .pfp-maker-page .label {
   margin: 6px 0 0;
-  color: #000;
+  color: var(--son-border);
   font-family: "Montserrat", sans-serif !important;
   font-size: 0.9rem;
   font-weight: 700;
@@ -266,32 +266,32 @@
 .pfp-maker-page .btn {
   justify-content: center;
   padding: 11px 14px;
-  border: 3px solid #000 !important;
+  border: 3px solid var(--son-border) !important;
   border-radius: 0 !important;
-  box-shadow: 4px 4px 0 #000;
+  box-shadow: 4px 4px 0 var(--son-shadow);
   font-family: "Montserrat", sans-serif !important;
   font-size: 0.85rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.02em;
   background: #fff;
-  color: #000;
+  color: var(--son-border);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .pfp-maker-page .btn:hover {
   transform: translate(-1px, -1px);
-  box-shadow: 5px 5px 0 #000;
+  box-shadow: 5px 5px 0 var(--son-shadow);
 }
 
 .pfp-maker-page .btn:active {
   transform: translate(2px, 2px);
-  box-shadow: 2px 2px 0 #000;
+  box-shadow: 2px 2px 0 var(--son-shadow);
 }
 
 .pfp-maker-page .btn.secondary {
   background: #fff;
-  color: #000;
+  color: var(--son-border);
 }
 
 .pfp-maker-page .btn.secondary:hover {
@@ -299,7 +299,7 @@
 }
 
 .pfp-maker-page .btn.toggle.active {
-  background: #000;
+  background: var(--son-border);
   color: #fff;
 }
 
@@ -309,8 +309,8 @@
   opacity: 0.45;
   cursor: not-allowed;
   transform: none;
-  box-shadow: 4px 4px 0 #000;
-  background: #eee;
+  box-shadow: 4px 4px 0 var(--son-shadow);
+  background: var(--son-bg-muted);
   color: #666;
 }
 
@@ -322,15 +322,15 @@
   flex-shrink: 0;
   font-size: 0.6rem;
   border-width: 2px !important;
-  box-shadow: 2px 2px 0 #000;
+  box-shadow: 2px 2px 0 var(--son-shadow);
 }
 
 .pfp-maker-page .btn.collapse-btn:hover {
-  box-shadow: 3px 3px 0 #000;
+  box-shadow: 3px 3px 0 var(--son-shadow);
 }
 
 .pfp-maker-page .btn.collapse-btn:active {
-  box-shadow: 1px 1px 0 #000;
+  box-shadow: 1px 1px 0 var(--son-shadow);
 }
 
 .pfp-maker-page .editor-text-btn {
@@ -385,11 +385,11 @@
 .pfp-maker-page .editor-layer-btn:disabled:active {
   opacity: 1;
   background: #f0f0f0;
-  color: #777;
+  color: var(--son-text-muted);
   cursor: not-allowed;
   transform: none;
   box-shadow: 3px 3px 0 #bbb;
-  border-color: #999 !important;
+  border-color: var(--son-border-soft) !important;
 }
 
 .pfp-maker-page .grid {
@@ -399,7 +399,7 @@
 
 .pfp-maker-page .card {
   background: #fff;
-  border: 2px solid #000;
+  border: 2px solid var(--son-border);
   border-radius: 0;
   padding: 6px 4px;
   min-height: 72px;
@@ -422,7 +422,7 @@
 }
 
 .pfp-maker-page .caption {
-  color: #000;
+  color: var(--son-border);
   font-size: 0.7rem;
   font-weight: 600;
 }
@@ -430,25 +430,25 @@
 .pfp-maker-page .side input[type="text"] {
   width: 100%;
   padding: 10px 12px;
-  border: 3px solid #000;
+  border: 3px solid var(--son-border);
   border-radius: 0;
   font-size: 0.95rem;
   box-sizing: border-box;
   background: #fff;
-  color: #000;
+  color: var(--son-border);
 }
 
 .pfp-maker-page .side input[type="text"]:focus {
   outline: none;
-  box-shadow: 3px 3px 0 #000;
+  box-shadow: 3px 3px 0 var(--son-shadow);
 }
 
 .pfp-maker-page .floatingDelete {
-  border: 3px solid #000;
+  border: 3px solid var(--son-border);
   border-radius: 0;
-  box-shadow: 4px 4px 0 #000;
+  box-shadow: 4px 4px 0 var(--son-shadow);
   background: #fff;
-  color: #000;
+  color: var(--son-border);
 }
 
 .pfp-maker-page .floatingDelete:hover {
@@ -517,8 +517,8 @@
     padding: 14px;
     box-sizing: border-box;
     background: #fff;
-    border: 3px solid #000;
-    box-shadow: 6px 6px 0 #000;
+    border: 3px solid var(--son-border);
+    box-shadow: 6px 6px 0 var(--son-shadow);
   }
 
   .pfp-maker-page .side--left {

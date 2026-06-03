@@ -5,11 +5,11 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: #fff;
-  border: 3px solid #000;
-  box-shadow: 4px 4px 0 #000;
+  background: var(--son-bg);
+  border: 3px solid var(--son-border);
+  box-shadow: 4px 4px 0 var(--son-shadow);
   cursor: pointer;
-  color: #000;
+  color: var(--son-text);
   text-decoration: none;
   font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
   font-weight: 900;
@@ -36,13 +36,13 @@
 
 .comic-btn:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 7px 7px 0 #000;
-  background: #fafafa;
+  box-shadow: 7px 7px 0 var(--son-shadow);
+  background: var(--son-bg-subtle);
 }
 
 .comic-btn:active {
   transform: translate(2px, 2px);
-  box-shadow: 2px 2px 0 #000;
+  box-shadow: 2px 2px 0 var(--son-shadow);
 }
 
 /* Circle — copy, play, social */
@@ -89,13 +89,13 @@
   display: block;
   width: 22px;
   height: 3px;
-  background: #000;
+  background: var(--son-bg-inverse);
   border-radius: 2px;
   transition: transform 0.2s ease;
 }
 
 .comic-btn--menu:hover span {
-  background: #000;
+  background: var(--son-bg-inverse);
 }
 
 /* Play / pause on iPod */
@@ -120,8 +120,8 @@
 
 .comic-btn--copy.copied {
   background: #10b981;
-  color: #fff;
-  border-color: #000;
+  color: var(--son-text-inverse);
+  border-color: var(--son-border);
 }
 
 .comic-btn--copy.copied:hover {

@@ -3,8 +3,8 @@
 .leaderboard-page {
   min-height: 100vh;
   padding: 100px 20px 160px;
-  background: #fff;
-  color: #000;
+  background: var(--son-bg);
+  color: var(--son-text);
   text-align: center;
   overflow-x: hidden;
   overflow-y: visible;
@@ -26,7 +26,7 @@
 
 .leaderboard-header p {
   font-size: 1.1rem;
-  color: #333;
+  color: var(--son-text-body);
   margin-bottom: 24px;
 }
 
@@ -49,8 +49,8 @@
   grid-template-columns: 56px 120px 1fr auto;
   gap: 14px;
   align-items: center;
-  background: #fff;
-  border: 2px solid #333;
+  background: var(--son-bg);
+  border: 2px solid var(--son-border-soft);
   border-radius: 20px;
   padding: 14px 16px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
@@ -63,8 +63,8 @@
 }
 
 .rank-card--top {
-  border-color: #000;
-  box-shadow: 6px 6px 0 #000;
+  border-color: var(--son-border);
+  box-shadow: 6px 6px 0 var(--son-shadow);
 }
 
 .rank-badge {
@@ -76,10 +76,10 @@
   justify-content: center;
   font-size: 0.95rem;
   font-weight: 900;
-  background: #fff;
-  border: 3px solid #000;
-  box-shadow: 3px 3px 0 #000;
-  color: #000;
+  background: var(--son-bg);
+  border: 3px solid var(--son-border);
+  box-shadow: 3px 3px 0 var(--son-shadow);
+  color: var(--son-text);
   justify-self: center;
 }
 
@@ -100,7 +100,7 @@
   height: 120px;
   border-radius: 16px;
   overflow: hidden;
-  border: 2px solid #333;
+  border: 2px solid var(--son-border-soft);
   flex-shrink: 0;
 }
 
@@ -143,11 +143,11 @@
   align-items: center;
   justify-content: center;
   padding: 5px 14px;
-  border: 2px solid #000;
+  border: 2px solid var(--son-border);
   border-radius: 999px;
-  background: #fff;
-  box-shadow: 2px 2px 0 #000;
-  color: #222;
+  background: var(--son-bg);
+  box-shadow: 2px 2px 0 var(--son-shadow);
+  color: var(--son-text);
   font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.03em;
@@ -168,11 +168,11 @@
   align-items: center;
   justify-content: center;
   padding: 8px 14px;
-  border: 2px solid #000;
+  border: 2px solid var(--son-border);
   border-radius: 999px;
-  background: #fff;
-  box-shadow: 3px 3px 0 #000;
-  color: #000;
+  background: var(--son-bg);
+  box-shadow: 3px 3px 0 var(--son-shadow);
+  color: var(--son-text);
   font-size: 0.92rem;
   font-weight: 900;
   white-space: nowrap;
@@ -185,12 +185,12 @@
 }
 
 .hint {
-  color: #555;
+  color: var(--son-text-secondary);
   text-align: center;
 }
 
 .hint.error {
-  color: #c62828;
+  color: var(--son-error-text);
 }
 
 @media (max-width: 760px) {

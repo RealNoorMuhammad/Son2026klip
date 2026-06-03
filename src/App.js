@@ -1,5 +1,5 @@
 // App.js
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { ThemeProvider as MuiThemeProvider } from "@mui/material/styles";
 import { Routes, Route, useLocation } from "react-router-dom";
 
@@ -22,6 +22,12 @@ function App() {
   const location = useLocation();
   const musicRef = useRef(null);
   const videoRefs = useRef([]); // shared between pages
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+  }, [location.pathname]);
 
   // ✅ Control functions
   const stopMusic = () => {
@@ -70,7 +76,6 @@ function App() {
           />
           <Route path="/submission" element={<ArtistSubmission />} />
         </Routes>
-
       </MuiThemeProvider>
     </div>
   );

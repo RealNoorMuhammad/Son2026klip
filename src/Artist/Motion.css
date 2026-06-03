@@ -1,6 +1,6 @@
 /* ---------- Upload Page ---------- */
 .uploadPage {
-  background-color: #fff;
+  background-color: var(--son-text-inverse);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -20,13 +20,13 @@
   font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
   font-size: clamp(2rem, 6vw, 2.75rem);
   font-weight: 900;
-  color: #000;
+  color: var(--son-text);
   margin: 0 0 12px;
 }
 
 .subtitle {
   font-size: 1.2rem;
-  color: #000;
+  color: var(--son-text);
   margin-bottom: 25px;
   font-weight: 500;
 }
@@ -41,11 +41,11 @@
   transition: 0.3s;
   max-width: 400px;
   width: 100%;
-  background: #fafafa;
+  background: var(--son-bg-subtle);
 }
 
 .uploadBox:hover {
-  background: #f0f0f0;
+  background: var(--son-bg-muted);
 }
 
 .uploadArea {
@@ -57,7 +57,7 @@
 
 .uploadArea p {
   margin: 0;
-  color: #333;
+  color: var(--son-text-body);
 }
 
 .hiddenInput {

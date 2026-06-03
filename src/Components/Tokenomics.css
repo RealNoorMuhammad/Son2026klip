@@ -1,7 +1,7 @@
 .tokenomics {
   width: 100%;
-  background: #fff;
-  border-bottom: 3px solid #000;
+  background: var(--son-bg);
+  border-bottom: 3px solid var(--son-border);
   box-sizing: border-box;
 }
 
@@ -23,7 +23,7 @@
   font-weight: 600;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: #9ca3af;
+  color: var(--son-text-faint);
 }
 
 .tokenomics__title {
@@ -32,7 +32,7 @@
   font-weight: 800;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  color: #000;
+  color: var(--son-text);
   line-height: 1.05;
 }
 
@@ -55,10 +55,10 @@
   gap: 10px;
   min-height: 120px;
   padding: 22px 20px;
-  background: #fff;
-  border: 3px solid #000;
+  background: var(--son-card-bg);
+  border: 3px solid var(--son-border);
   border-radius: 16px;
-  box-shadow: 5px 5px 0 #000;
+  box-shadow: 5px 5px 0 var(--son-shadow);
   box-sizing: border-box;
   text-decoration: none;
   color: inherit;
@@ -70,17 +70,17 @@
 
 .tokenomics__card-link:hover {
   transform: translate(-3px, -3px);
-  box-shadow: 8px 8px 0 #000;
+  box-shadow: 8px 8px 0 var(--son-shadow);
 }
 
 .tokenomics__card-link:active {
   transform: translate(2px, 2px);
-  box-shadow: 3px 3px 0 #000;
+  box-shadow: 3px 3px 0 var(--son-shadow);
 }
 
 .tokenomics__card-body:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 7px 7px 0 #000;
+  box-shadow: 7px 7px 0 var(--son-shadow);
 }
 
 .tokenomics__label {
@@ -88,19 +88,19 @@
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #6b7280;
+  color: var(--son-text-muted);
 }
 
 .tokenomics__value {
   font-size: clamp(1.1rem, 2.2vw, 1.45rem);
   font-weight: 800;
   line-height: 1.15;
-  color: #000;
+  color: var(--son-text);
   word-break: break-word;
 }
 
 .tokenomics__card-link .tokenomics__value {
-  color: #000;
+  color: var(--son-text);
 }
 
 .tokenomics__link-hint {

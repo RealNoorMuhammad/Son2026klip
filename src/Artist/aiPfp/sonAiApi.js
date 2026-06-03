@@ -78,7 +78,7 @@ export async function generateSonMemePfp(file, { onProgress } = {}) {
   });
 
   if (!imageEl?.src) {
-    throw new Error("AI did not return an image. Try again later.");
+    throw new Error("AI did not return an image. Please try again.");
   }
 
   return imageEl.src;

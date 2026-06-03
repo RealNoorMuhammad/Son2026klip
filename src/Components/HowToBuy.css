@@ -3,8 +3,8 @@
   --htb-card-shadow: 5px;
 
   width: 100%;
-  background: #fff;
-  border-bottom: 3px solid #000;
+  background: var(--son-bg);
+  border-bottom: 3px solid var(--son-border);
   box-sizing: border-box;
   overflow-x: clip;
   overflow-y: visible;
@@ -44,7 +44,7 @@
   font-weight: 600;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: #9ca3af;
+  color: var(--son-text-faint);
 }
 
 .how-to-buy__title {
@@ -53,7 +53,7 @@
   font-weight: 800;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  color: #000;
+  color: var(--son-text);
   line-height: 1.05;
 }
 
@@ -100,10 +100,10 @@
   align-items: stretch;
   width: 100%;
   height: var(--htb-card-height);
-  background: #fff;
-  border: 3px solid #000;
+  background: var(--son-bg);
+  border: 3px solid var(--son-border);
   border-radius: 16px;
-  box-shadow: var(--htb-card-shadow) var(--htb-card-shadow) 0 #000;
+  box-shadow: var(--htb-card-shadow) var(--htb-card-shadow) 0 var(--son-shadow);
   overflow: hidden;
   box-sizing: border-box;
 }
@@ -115,8 +115,8 @@
   margin-bottom: 0;
   border-radius: 0;
   overflow: hidden;
-  background: #fff;
-  border-right: 3px solid #000;
+  background: var(--son-bg);
+  border-right: 3px solid var(--son-border);
   box-shadow: none;
   display: flex;
   align-items: center;
@@ -149,7 +149,7 @@
   font-size: clamp(1.65rem, 3vw, 2.15rem);
   font-weight: 800;
   line-height: 1.12;
-  color: #000;
+  color: var(--son-text);
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
@@ -158,14 +158,14 @@
 
 .how-to-buy__step-num {
   font-weight: 800;
-  color: #000;
+  color: var(--son-text);
 }
 
 .how-to-buy__desc {
   margin: 0 0 16px;
   font-size: clamp(1.05rem, 1.6vw, 1.2rem);
   line-height: 1.55;
-  color: #111;
+  color: var(--son-text-soft);
   flex: 0 1 auto;
   min-width: 0;
 }
@@ -191,14 +191,14 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #d1d5db;
+  background: var(--son-border-soft);
   transition: background 0.3s ease, transform 0.3s ease, width 0.3s ease;
 }
 
 .how-to-buy__dot--active {
   width: 28px;
   border-radius: 999px;
-  background: #000;
+  background: var(--son-bg-inverse);
 }
 
 .how-to-buy__scroll-hint {
@@ -207,7 +207,7 @@
   font-weight: 600;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: #9ca3af;
+  color: var(--son-text-faint);
 }
 
 /* Phantom wallet button */
@@ -222,7 +222,7 @@
   cursor: pointer;
   text-decoration: none;
   overflow: hidden;
-  box-shadow: 3px 3px 0 #000;
+  box-shadow: 3px 3px 0 var(--son-shadow);
   transition:
     transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1),
     box-shadow 0.22s ease;
@@ -238,12 +238,12 @@
 
 .how-to-buy__phantom-btn:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 5px 5px 0 #000;
+  box-shadow: 5px 5px 0 var(--son-shadow);
 }
 
 .how-to-buy__phantom-btn:active {
   transform: translate(1px, 1px);
-  box-shadow: 2px 2px 0 #000;
+  box-shadow: 2px 2px 0 var(--son-shadow);
 }
 
 /* Contract copy — themed pill, stays inside card */
@@ -255,23 +255,23 @@
   max-width: 100%;
   margin: 0;
   padding: 10px 14px;
-  border: 2px solid #000;
+  border: 2px solid var(--son-border);
   border-radius: 999px;
-  background: #fff;
+  background: var(--son-bg);
   cursor: pointer;
   text-align: left;
   box-sizing: border-box;
-  box-shadow: 2px 2px 0 #000;
+  box-shadow: 2px 2px 0 var(--son-shadow);
   transition: background 0.2s ease, border-color 0.2s ease;
 }
 
 .how-to-buy__copy:hover {
-  background: #fafafa;
+  background: var(--son-bg-subtle);
 }
 
 .how-to-buy__copy--done {
-  background: #f3f4f6;
-  border-color: #000;
+  background: var(--son-bg-muted);
+  border-color: var(--son-border);
 }
 
 .how-to-buy__copy-label {
@@ -281,7 +281,7 @@
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #6b7280;
+  color: var(--son-text-muted);
 }
 
 .how-to-buy__copy-row {
@@ -296,7 +296,7 @@
   min-width: 0;
   font-size: clamp(0.8rem, 1.15vw, 0.9rem);
   line-height: 1.35;
-  color: #000;
+  color: var(--son-text);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -305,7 +305,7 @@
 .how-to-buy__copy-icon {
   flex-shrink: 0;
   font-size: 1rem;
-  color: #000;
+  color: var(--son-text);
   font-weight: 700;
 }
 
@@ -316,10 +316,10 @@
   justify-content: center;
   gap: 8px;
   padding: 12px 22px;
-  border: 3px solid #000;
+  border: 3px solid var(--son-border);
   border-radius: 999px;
-  background: #000;
-  color: #fff;
+  background: var(--son-bg-inverse);
+  color: var(--son-text-inverse);
   font-size: clamp(0.82rem, 1.1vw, 0.92rem);
   font-weight: 700;
   text-decoration: none;
@@ -332,14 +332,14 @@
 }
 
 .how-to-buy__dex-btn:hover {
-  background: #111;
+  background: var(--son-bg-inverse);
   transform: translate(-2px, -2px);
-  box-shadow: 6px 6px 0 #000;
+  box-shadow: 6px 6px 0 var(--son-shadow);
 }
 
 .how-to-buy__dex-btn:active {
   transform: translate(1px, 1px);
-  box-shadow: 2px 2px 0 #000;
+  box-shadow: 2px 2px 0 var(--son-shadow);
 }
 
 .how-to-buy__dex-arrow {
@@ -360,10 +360,10 @@
   z-index: 10000;
   margin: 0;
   padding: 14px 28px;
-  border: 3px solid #000;
+  border: 3px solid var(--son-border);
   border-radius: 999px;
-  background: #000;
-  color: #fff;
+  background: var(--son-bg-inverse);
+  color: var(--son-text-inverse);
   font-size: 0.88rem;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -454,12 +454,12 @@
     height: auto;
     min-height: auto;
     border-right: none;
-    border-bottom: 3px solid #000;
+    border-bottom: 3px solid var(--son-border);
   }
 
   .how-to-buy__image {
     object-fit: contain;
-    background: #fff;
+    background: var(--son-bg);
   }
 
   .how-to-buy__body {

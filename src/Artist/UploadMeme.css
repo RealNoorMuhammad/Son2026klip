@@ -4,7 +4,7 @@
   min-height: 100vh;
   padding: 100px 20px 160px;
   background: #fff;
-  color: #000;
+  color: var(--son-border);
   text-align: center;
   overflow-x: hidden;
   overflow-y: visible;
@@ -59,7 +59,7 @@
 }
 
 .meme-composer-box:focus-within {
-  border-color: #000;
+  border-color: var(--son-border);
 }
 
 .meme-composer h2 {
@@ -124,25 +124,25 @@
 .meme-form label {
   font-size: 0.9rem;
   font-weight: 700;
-  color: #222;
+  color: var(--son-text);
 }
 
 .meme-form input[type="text"],
 .meme-form input[type="file"] {
   width: 100%;
-  border: 2px solid #000;
+  border: 2px solid var(--son-border);
   border-radius: 12px;
   background: #fff;
-  color: #000;
+  color: var(--son-border);
   padding: 12px 14px;
   font-size: 0.95rem;
   box-sizing: border-box;
-  box-shadow: 3px 3px 0 #000;
+  box-shadow: 3px 3px 0 var(--son-shadow);
 }
 
 .meme-form input[type="text"]:focus {
   outline: none;
-  box-shadow: 4px 4px 0 #000;
+  box-shadow: 4px 4px 0 var(--son-shadow);
 }
 
 .meme-preview {
@@ -177,7 +177,7 @@
   margin: 0;
   font-weight: 900;
   font-size: 1.1rem;
-  color: #000;
+  color: var(--son-border);
 }
 
 .meme-preview--empty span {
@@ -218,7 +218,7 @@
 
 .status.error,
 .warning {
-  color: #c62828;
+  color: var(--son-error-text);
 }
 
 .status.success {
@@ -257,7 +257,7 @@
   max-width: none;
   border-radius: 20px;
   overflow: hidden;
-  border: 2px solid #333;
+  border: 2px solid var(--son-border-soft);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
   background: #fff;
   text-align: left;
@@ -318,12 +318,12 @@
   top: 12px;
   right: 12px;
   background: #fff;
-  border: 2px solid #000;
+  border: 2px solid var(--son-border);
   border-radius: 999px;
   padding: 6px 12px;
   font-size: 0.9rem;
   font-weight: 900;
-  box-shadow: 3px 3px 0 #000;
+  box-shadow: 3px 3px 0 var(--son-shadow);
   z-index: 2;
 }
 
@@ -354,10 +354,10 @@
   max-width: min(920px, 96vw);
   max-height: 92vh;
   background: #fff;
-  border: 3px solid #000;
+  border: 3px solid var(--son-border);
   border-radius: 20px;
   padding: 20px;
-  box-shadow: 8px 8px 0 #000;
+  box-shadow: 8px 8px 0 var(--son-shadow);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -368,7 +368,7 @@
   margin: 0;
   font-size: 1.2rem;
   font-weight: 900;
-  color: #000;
+  color: var(--son-border);
   text-align: center;
 }
 
@@ -405,7 +405,7 @@
   margin: 0;
   font-size: 1rem;
   font-weight: 900;
-  color: #000;
+  color: var(--son-border);
   letter-spacing: 0.02em;
 }
 
@@ -415,11 +415,11 @@
   align-items: center;
   justify-content: center;
   padding: 5px 12px;
-  border: 2px solid #000;
+  border: 2px solid var(--son-border);
   border-radius: 999px;
   background: #fff;
-  box-shadow: 2px 2px 0 #000;
-  color: #222;
+  box-shadow: 2px 2px 0 var(--son-shadow);
+  color: var(--son-text);
   font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.03em;
@@ -473,7 +473,7 @@
 }
 
 .meme-comment strong {
-  color: #000;
+  color: var(--son-border);
   font-size: 0.85rem;
 }
 
@@ -500,14 +500,14 @@
   position: relative;
   width: min(420px, 100%);
   background: #fff;
-  border: 3px solid #000;
+  border: 3px solid var(--son-border);
   border-radius: 20px;
   padding: 28px 24px;
   display: grid;
   gap: 12px;
-  box-shadow: 8px 8px 0 #000;
+  box-shadow: 8px 8px 0 var(--son-shadow);
   text-align: left;
-  color: #000;
+  color: var(--son-border);
 }
 
 .meme-modal h3 {
@@ -525,16 +525,16 @@
 .meme-modal input,
 .meme-comment-input {
   width: 100%;
-  border: 2px solid #000;
+  border: 2px solid var(--son-border);
   border-radius: 12px;
   background: #fff;
-  color: #000;
+  color: var(--son-border);
   padding: 12px;
   font-size: 0.95rem;
   font-family: inherit;
   resize: vertical;
   box-sizing: border-box;
-  box-shadow: 3px 3px 0 #000;
+  box-shadow: 3px 3px 0 var(--son-shadow);
 }
 
 .meme-modal input:focus,
@@ -549,12 +549,12 @@
   width: 36px;
   height: 36px;
   background: #fff;
-  border: 2px solid #000;
+  border: 2px solid var(--son-border);
   border-radius: 50%;
-  color: #000;
+  color: var(--son-border);
   font-size: 1rem;
   cursor: pointer;
-  box-shadow: 2px 2px 0 #000;
+  box-shadow: 2px 2px 0 var(--son-shadow);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -562,7 +562,7 @@
 
 .meme-modal-close:hover {
   transform: translate(-1px, -1px);
-  box-shadow: 3px 3px 0 #000;
+  box-shadow: 3px 3px 0 var(--son-shadow);
 }
 
 @media (max-width: 640px) {
@@ -639,7 +639,7 @@
   .wallet {
     font-size: 0.72rem;
     padding: 4px 10px;
-    box-shadow: 2px 2px 0 #000;
+    box-shadow: 2px 2px 0 var(--son-shadow);
   }
 
   .meme-like-badge {
@@ -647,7 +647,7 @@
     right: 4px;
     padding: 2px 6px;
     font-size: 0.62rem;
-    box-shadow: 2px 2px 0 #000;
+    box-shadow: 2px 2px 0 var(--son-shadow);
   }
 
   .meme-card-image-btn img,

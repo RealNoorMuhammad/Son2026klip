@@ -100,8 +100,7 @@ function AiPfpMaker() {
     } catch (err) {
       setStatus("ready");
       setError(
-        err?.message ||
-          "Generation failed. Check your connection and try again."
+        err?.message || "Generation failed. Check your connection and try again."
       );
     } finally {
       setProgressText("");
