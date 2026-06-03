@@ -7,9 +7,6 @@ import {
   Transformer,
 } from "react-konva";
 
-import SonUpload from './SonUpload'
-
-
 import SiteLogo from "../buttons/SiteLogo";
 import hat from "./hatt.png";
 import cigerate from "./cigerate1.png";

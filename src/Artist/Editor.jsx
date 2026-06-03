@@ -191,15 +191,14 @@ function EditableText({ node, selected, onSelect, onChange }) {
         }
         onTransformEnd={() => {
           const n = ref.current;
-          const scaleX = n.scaleX();
-          const scaleY = n.scaleY();
+          const scale = Math.max(n.scaleX(), n.scaleY());
           n.scaleX(1);
           n.scaleY(1);
           onChange({
             ...node,
             x: n.x(),
             y: n.y(),
-            fontSize: Math.max(10, n.fontSize() * scaleY),
+            fontSize: Math.max(10, n.fontSize() * scale),
           });
         }}
       />
